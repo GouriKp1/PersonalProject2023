@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial scale = 1.0">
+        <title>Clifford Bluez♪</title>
+        <link rel = "stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src = "jazzlogo2.png"></a> <!--logo (change)-->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()" ></i>
+                    <ul>
+                        <li><a href="#banner">HOME</a></li>
+                        <li><a href="#extra">ABOUT</a></li>
+                        <li><a href="#locations">LOCATIONS</a></li> <!--CHANGE-->
+                        <li><a href="#events">EVENTS</a></li> <!--CHANGE-->
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" ></i>
+            </nav>
+    <div class="text-box" id="banner"> <!--THIS WHOLE SECTION NEEDS PROPER TEXT-->
+        <h1>Clifford Bluez</h1> 
+        <p>The smoothest jazz in the world!</p>
+            <!---------<a href="" class="hero-btn"> SOMETHINGGGGGG</a>----->
+    </div>
+
+            
+        </section>
+
+        <!--Extra information-->
+        <section class = "Extra" id="extra">
+            <h1>About</h1>
+           <!-- <p>What's Jazz? Who plays Jazz? Who are we? All your answers are here!</p>-->
+
+
+            <div class="row"> 
+                <div class="extra-col">
+                    <h3>About Jazz</h3><!----CHANGE-->
+                    <p>
+                        Jazz is a uniquely American musical genre, with a rich and fascinating history!
+                         The roots of jazz can be traced back to the Afro-American folk music traditions, work songs, and blues, 
+                         as well as 19th century band music and ragtime piano playing. Some of the key elements of jazz include 
+                         characteristic rhythm patterns, harmonic practices, and improvisation. Jazz has had a significant impact on other musical genres, 
+                         such as classical music and popular music. 
+                    </p>
+                </div>
+                <div class="extra-col">
+                    <h3>Famous Musicians</h3><!----CHANGE-->
+                    <p>
+                        Some of the most well knwon Jazz musicians are:<br><br>
+                         - Trumpeter Lois Armstrong<br>
+                         - Pianist Duke Ellington<br>
+                         - John Coltrane<br>
+                         - Charlie Parker<br>
+                        - Charles Mingus<br>
+                        <br>
+                        And many many others!
+
+
+                    </p>
+                </div>
+                <div class="extra-col">
+                    <h3>Our Mission</h3><!----CHANGE-->
+                    <p> <br>
+                        As one of the most influential genres of music, we want to work to bring Jazz back to the surface, and re-introduce it to the younger generations! To do
+                        this, we have performances around the globe, go on tours, and meet with others just as modern pop artists do! We bring fun love, and, of course, music to every one of our performances!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!----Our locations----->
+        <section class="locations" id="locations">
+            <h1>Our locations</h1>
+            <h5>We try to get sround as much as we can! Here's where we perform this month</h5>
+
+            <div class="row">
+                <div class="location-col">
+                    <img src="place1.jpg">
+                    <div class="layer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                <div class="location-col">
+                    <img src="place2.jpg">
+                    <div class="layer">
+                        <h3>SYDNEY</h3>
+                    </div>
+                </div>
+                <div class="location-col">
+                    <img src="place3.jpg">
+                    <div class="layer">
+                        <h3>NEW YORK</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----------Special events---------->
+
+        <section class="events" id="events">
+            <h1>Special Events</h1>
+            <h5>We want to make our performances fun and interactive! Here is what to look out for</h5>
+
+            <div class="row">
+                <div class="events-col">
+                    <img src = "solo2.jpg">
+                    <h3>Solos</h3>
+                    <p>We star each of our band members during performances, 
+                    showcasing their individual talent and hardwork for everyone to see!</p>
+
+                </div>
+
+                <div class="events-col">
+                    <img src = "busking.jpg">
+                    <h3>Busking</h3>
+                    <p>We perform in local areas, hoping to bring love and joy to every 
+                    town we visit!</p>
+
+                </div>
+
+                <div class="events-col">
+                    <img src = "crowd.jpg">
+                    <h3>You-and-I</h3>
+                    <p>We encourage any and all musicians our audience to
+                     perform with us during our concerts!</p>
+
+                </div>
+
+
+
+            </div>
+
+            
+        </section>
+
+        
+
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+
+
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	            speed: 1000,
+	            speedAsDuration: true
+            });
+
+        </script>
+
+
+        <!---Call to action-->
+
+        <section class="cta">
+            <h1>We'll see you soon!</h1>
+            <h3> With love and Jazz! - The Clifford Bluez♪</h3>
+        </section>
+
+    </body>
+</html>
